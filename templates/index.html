@@ -11,6 +11,7 @@
 </head>
 
 <body>
+	<center>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -22,21 +23,29 @@
     <form action="{{ url_for('predict')}}"method="post">
     	<input type="text" name="Overall quality" placeholder="Overall quality (1-10)" required="required" />
 	<br>
+	<br>
         <input type="text" name="Ground floor living area in square feet" placeholder="Ground floor living area in square feet" required="required" size=50 />
+	<br>
 	<br>
 	<input type="text" name="Basement size in square feet" placeholder="Basement size in square feet" required="required" size=50 />
 	<br>
+	<br>
 	<input type="text" name="First floor size in square feet" placeholder="First floor size in square feet" required="required" size=50 />
+	<br>
 	<br>
         <input type="text" name="Garage Area in square feet" placeholder="Garage Area in square feet" required="required" size=50 />
 	<br>
+	<br>
 	<input type="text" name="Number of cars in garage" placeholder="Number of cars in garage" required="required" size=50 />
+	<br>
 	<br>
 	<input type="text" name="Lot Area" placeholder="Lot Area" required="required" size=50 />
 	<br>
+	<br>
 	<input type="text" name="Home age in years" placeholder="Home age in years" required="required" size=50 />
 	<br>
-        <button type="submit" class="btn btn-primary btn-block btn-large">Get Home price prediction</button>
+	<br>
+        <button type="submit" class="btn btn-primary btn-block btn-large" style="height:22px;width:25px">Get Home price prediction</button>
     </form>
 
    <br>
@@ -46,7 +55,8 @@
 	<br>
 	 <img src="https://cdn.vox-cdn.com/thumbor/1AYT1BFO5blZbJdJ2XpEPbc9hNs=/0x0:2000x3000/1200x800/filters:focal(840x1340:1160x1660)/cdn.vox-cdn.com/uploads/chorus_image/image/65892997/east_boston_house_2006.0.jpg" alt="Home">
 	 
-
+	
  </div>
+</center>
 </body>
 </html>
