@@ -1,7 +1,7 @@
 Flask==1.1.1
 Jinja2==2.11.1
 jsonify==0.5
-numpy==1.18.1
+numpy==1.22.0
 request==2019.4.13
 requests==2.23.0
 scikit-learn==0.22.1
